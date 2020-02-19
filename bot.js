@@ -42,7 +42,7 @@ getNewStories = (sub='fapnthrowit', num=1) => {
 postNewStory = (post) => {
   console.log(post)
   // creating a post object to submit to Reddit
-    reddit.getSubreddit('cumshot').submitLink(
+    reddit.getSubreddit('cumheaven').submitLink(
       {
         title: post.title,
         url: post.url,
@@ -57,7 +57,7 @@ postNewStory = (post) => {
 
 // This function runs getNewStories in several diffrent subreddits and posts them in our subreddit
 getDevStories = () => {
-  getNewStories('slutsatcollege', 2);
+  getNewStories('cumshot', 2);
 }
 
 
