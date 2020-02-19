@@ -57,7 +57,7 @@ postNewStory = (post) => {
 
 // This function runs getNewStories in several diffrent subreddits and posts them in our subreddit
 getDevStories = () => {
-  getNewStories('cumshot', 2);
+  getNewStories('fapnthrowit', 2);
 }
 
 
