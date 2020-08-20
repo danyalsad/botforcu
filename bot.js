@@ -23,7 +23,7 @@ const reddit = new snoowrap({
 // Our main function that will call the Reddit api for new stories in a specific subreddit
 // if you aren't familiar with ES6 syntax, the sub will default to /r/aww, the number of stories to 10.
 // The arrows are one way of writing functions in ES6.
-getNewStories = (sub='fapnthrowit', num=1) => {
+getNewStories = (sub='Mia_khalifa', num=3) => {
     reddit.getSubreddit(sub).getHot()
     .then(function(listing) {
         for (var i = 0; i < num ; i++) {
@@ -42,7 +42,7 @@ getNewStories = (sub='fapnthrowit', num=1) => {
 postNewStory = (post) => {
   console.log(post)
   // creating a post object to submit to Reddit
-    reddit.getSubreddit('cumheaven').submitLink(
+    reddit.getSubreddit('MiaKhalifaX').submitLink(
       {
         title: post.title,
         url: post.url,
@@ -57,7 +57,8 @@ postNewStory = (post) => {
 
 // This function runs getNewStories in several diffrent subreddits and posts them in our subreddit
 getDevStories = () => {
-  getNewStories('fapnthrowit', 2);
+  getNewStories('miakhalifapics', 3);
+getNewStories('Miakhalifa', 3);
 }
 
 
@@ -65,4 +66,4 @@ getDevStories = () => {
 getDevStories();
 // Set how often the bot will run in milliseconds. Be careful not to set it for too frequently!
 // This one is set for an hour
-setInterval(getDevStories, 18000000);
+setInterval(getDevStories, 9000000);
